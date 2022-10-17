@@ -1,0 +1,347 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #000000;
+}
+
+nav{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    /* border: 1px solid red; */
+    position: absolute;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo{
+    flex: 20%;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 50px;
+    /* border: 1px solid blue; */
+}
+
+.logo img{
+    max-height: 90px;
+}
+
+.grupo-topo{
+    flex:80%;
+}
+
+.select-idioma{
+    padding: 5px 15px;
+    float: right;
+    margin: 1%;
+    background: none;
+    color: white;
+}
+
+.btn-topo{
+    background: red;
+    padding: 5px 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    float: right;
+    margin: 1% 5% 0 1%;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* height: 80vh; */
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.4), rgba(0,0,0,0.9)), url(../img/fundo.jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 8px solid #333333;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.miolo{
+    color: white;
+    width: 100%;
+    margin-top: 5%;
+    text-align: center;
+    padding: 10px;
+    /* border: 1px solid white; */
+
+}
+
+.miolo h1{
+    font-size: 3rem;
+    text-shadow: 1px 1px 5px black;
+    padding: 0;
+    margin: 0;
+}
+
+.miolo h2{
+    font-weight: 500;
+    text-shadow: 1px 1px 5px black;
+    padding: 10px;
+    margin: 0;
+}
+
+.miolo h3{
+    font-weight: 400;
+
+}
+
+.input-container{
+    text-align: center;
+}
+
+.input-email{
+    width: 450px;
+    height: 58px;
+    padding: 31px 40px 20px 10px;
+    margin-right: 0;
+    margin-bottom: 2%;
+    border: none;
+}
+
+.btn-email{
+    background: red;
+    border: 1px solid red;
+    color: white;
+    width: 200px;
+    height: 60px;
+    font-size: 22px;
+    padding: 19px;
+    margin-left: 0;
+}
+
+section{
+    display: flex;
+    color: white;
+    border-bottom: 8px solid #333333;
+    margin-bottom: 2%;
+}
+
+section img {
+    max-width: 100%;
+}
+
+section h2{
+    font-size: 3rem;
+
+}
+
+section h3{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"]{
+    float: left;
+    padding: 35px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.pergunta{
+    width: 100%;
+    background: #333333;
+    padding: 15px 0px 15px 25px;
+    font-size: 30px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.resposta{
+    width: 100%;
+    background: #333333;
+    padding: 15px 0px 15px 25px;
+    font-size: 30px;
+    cursor: pointer;
+    margin-bottom: 5px;
+    display: none;
+}
+
+.icone{
+    float: right;
+    margin-right: 5%;
+}
+
+footer{
+    color: grey;
+    width: 100%;
+}
+
+footer a{
+    color: grey;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
+.no-padding{
+    padding: 20px !important;
+}
+
+@media only screen and (min-width:0px) and (max-width:332px) {
+    [class*="col-"]{
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo{
+        padding: 0;
+        text-align: center !important;
+    }
+
+    .logo img{
+        max-width: 50px !important;
+    }
+
+    .miolo h1{
+        font-size: 1.5rem;
+    }
+
+    .input-email{
+        width: 90%;
+    }
+
+    .grupo-topo{
+        display: none;
+    }
+
+    .select-idioma{
+        padding: 2px 7px !important;
+    }
+
+    .btn-topo{
+        padding: 2px 7px !important;
+    }
+
+    .btn-email{
+        width: 80% !important;
+    }
+}
+
+
+@media only screen and (min-width:333px) and (max-width:380px) {
+    [class*="col-"]{
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo{
+        padding: 0;
+    }
+
+    .logo img{
+        min-width: 100px !important;
+    }
+
+    .miolo h1{
+        font-size: 2.5rem;
+    }
+
+    .input-email{
+        width: 250px;
+    }
+
+    .select-idioma{
+        padding: 2px 7px !important;
+    }
+
+    .btn-topo{
+        padding: 2px 7px !important;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    [class*="col-"]{
+        width: 100%;
+        text-align: center;
+    }
+
+    .logo{
+        padding: 0;
+    }
+
+    .logo img{
+        min-width: 150px;
+    }
+
+    .miolo h1{
+        font-size: 2.5rem;
+    }
+
+    .input-email{
+        width: 250px;
+    }
+}
+
+@media only screen and (min-width:600px) {
+    [class*="col-"]{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width:768px){
+   
+}
+
+@media only screen and (min-width: 950px){
+    [class*="col-"]{
+        text-align: left;
+    }
+    
+    .container{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+
+    .miolo h1{
+        font-size: 4rem;
+    }
+
+}
+
+@media only screen and (min-width:1200px) {
+    .container{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
