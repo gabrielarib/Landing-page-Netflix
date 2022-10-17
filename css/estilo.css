@@ -295,6 +295,11 @@ footer a:hover{
     .input-email{
         width: 250px;
     }
+
+    .container video{
+        text-align: center;
+        max-height: 200px !important;
+    }
 }
 
 @media only screen and (min-width:600px) {
@@ -302,6 +307,8 @@ footer a:hover{
         width: 100%;
         text-align: center;
     }
+
+    
 }
 
 @media only screen and (min-width:768px){
